@@ -16,14 +16,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install cowsay
-        run: sudo apt-get update && sudo apt-get install -y cowsay
-
-      - name: Generate artwork.txt
-        run: |
-          cowsay -f dragon "Hello from GitHub Actions!" > artwork.txt
-
-      - name: Show artwork
-        run: cat artwork.txt
+      - name: shellscript for  cowsay
+        run: ./dragonscript.sh
+        
 
       
