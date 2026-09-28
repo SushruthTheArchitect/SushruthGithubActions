@@ -17,7 +17,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: shellscript for  cowsay
-        run: ./dragonscript.sh
+        run: |
+           chmod +x
+           ./dragonscript.sh
         
 
       
