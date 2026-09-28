@@ -21,7 +21,7 @@ jobs:
 
       - name: Generate artwork.txt
         run: |
-          cowsay "Hello from GitHub Actions!" > artwork.txt
+          cowsay -f dragon "Hello from GitHub Actions!" > artwork.txt
 
       - name: Show artwork
         run: cat artwork.txt
